@@ -18,7 +18,8 @@ python setup.py install
 # Usage Document:
 
 ```
-filter = ExtractLevelDomain()
+import ExtractLevelDomain
+filter = ExtractLevelDomain.ExtractLevelDomain()
 
 #普通抽取域名,默认是最多匹配
 print filter.parse_url('http://dmp.301.xiaorui.cc/redirect/xiaorui.cc')
