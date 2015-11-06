@@ -1,5 +1,5 @@
 # ExtractLevelDomain
-通过URL抽取各层的域名
+通过URL抽取各层各级的域名(一级域名,二级域名....) .  这模块本来是用来分析日志及数据分析的.
 
 # Install Document:
 
