@@ -18,6 +18,8 @@ class ExtractLevelDomain():
             '.at', '.be', '.com.br',
             '.net.br',
             '.bz',
+            '.tech',
+            '.top',
             '.xin',
             '.site',
             '.link',
