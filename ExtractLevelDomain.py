@@ -19,6 +19,7 @@ class ExtractLevelDomain():
             '.net.br',
             '.bz',
             '.tech',
+            '.pub',
             '.top',
             '.xin',
             '.site',
