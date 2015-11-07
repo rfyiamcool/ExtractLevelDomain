@@ -5,7 +5,7 @@ from urlparse import urlparse
 class ExtractLevelDomain():
 
     def __init__(self):
-        self.topHostPostfix = (
+        self.topHostPostfix = [
             '.com','.la','.io',
             '.co', '.cn','.info',
             '.net', '.org','.me',
@@ -24,6 +24,7 @@ class ExtractLevelDomain():
             '.xin',
             '.site',
             '.link',
+            '.online',
             '.help',
             '.kr',
             '.club',
@@ -67,7 +68,7 @@ class ExtractLevelDomain():
             '.co.uk',
             '.me.uk',
             '.org.uk',
-            '.vg')
+            '.vg']
         
         self.extractPattern = r'[\.]('+'|'.join([h.replace('.',r'\.') for h in self.topHostPostfix])+')$'
         self.pattern = re.compile(self.extractPattern,re.IGNORECASE)
@@ -93,6 +94,13 @@ class ExtractLevelDomain():
         self.extractPattern = extractRule
         self.pattern = re.compile(self.extractPattern,re.IGNORECASE)
         self.level = level
+
+    def add_top_domain(self,top):
+        if top not in self.topHostPostfix:
+            self.topHostPostfix.append(top)
+            return True
+        else:
+            return False
 
     def _parse_regex(self,level):
         extractRule = r'(\w*\.?)%s('+'|'.join([h.replace('.',r'\.') for h in self.topHostPostfix])+')$'
