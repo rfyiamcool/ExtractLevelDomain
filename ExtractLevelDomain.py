@@ -96,11 +96,17 @@ class ExtractLevelDomain():
         self.level = level
 
     def add_top_domain(self,top):
+        if not top.startswith('.'):
+            raise ValueError('top_domain must have . (.com|.com.cn|.net)')
         if top not in self.topHostPostfix:
             self.topHostPostfix.append(top)
+            self._reset()
             return True
         else:
             return False
+
+    def _reset(self):
+        set_level(self.level)    
 
     def _parse_regex(self,level):
         extractRule = r'(\w*\.?)%s('+'|'.join([h.replace('.',r'\.') for h in self.topHostPostfix])+')$'
