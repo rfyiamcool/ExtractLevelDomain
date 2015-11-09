@@ -17,6 +17,7 @@ class ExtractLevelDomain():
             '.org.ag','.am','.asia',
             '.at', '.be', '.com.br',
             '.net.br',
+            '.name',
             '.bz',
             '.tech',
             '.pub',
