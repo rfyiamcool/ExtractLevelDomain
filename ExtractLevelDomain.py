@@ -18,6 +18,7 @@ class ExtractLevelDomain():
             '.at', '.be', '.com.br',
             '.net.br',
             '.name',
+            '.live',
             '.bz',
             '.tech',
             '.pub',
