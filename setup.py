@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
         name = "ExtractLevelDomain",
-        version = "2.0",
+        version = "2.1",
         author = "ruifengyun",
         author_email = "rfyiamcool@163.com",
         description = "pass url to extract domain",

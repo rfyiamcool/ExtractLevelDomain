@@ -42,6 +42,7 @@ class ExtractLevelDomain():
             '.nom.es',
             '.org.es',
             '.eu',
+            '.wiki',
             '.fm',
             '.fr',
             '.gs',
