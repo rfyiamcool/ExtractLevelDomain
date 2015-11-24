@@ -19,6 +19,7 @@ class ExtractLevelDomain():
             '.net.br',
             '.name',
             '.live',
+            '.news',
             '.bz',
             '.tech',
             '.pub',
