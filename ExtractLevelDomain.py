@@ -23,6 +23,8 @@ class ExtractLevelDomain():
             '.bz',
             '.tech',
             '.pub',
+            '.wang',
+            '.space',
             '.top',
             '.xin',
             '.site',
