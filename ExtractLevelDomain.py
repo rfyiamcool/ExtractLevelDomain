@@ -27,6 +27,7 @@ class ExtractLevelDomain():
             '.space',
             '.top',
             '.xin',
+            '.social',
             '.site',
             '.link',
             '.online',
