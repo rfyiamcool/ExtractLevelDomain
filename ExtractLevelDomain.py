@@ -28,6 +28,7 @@ class ExtractLevelDomain():
             '.top',
             '.xin',
             '.social',
+            '.date',
             '.site',
             '.link',
             '.online',
