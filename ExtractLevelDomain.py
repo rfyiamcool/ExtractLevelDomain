@@ -30,6 +30,7 @@ class ExtractLevelDomain():
             '.social',
             '.date',
             '.site',
+            '.red',
             '.link',
             '.online',
             '.help',
