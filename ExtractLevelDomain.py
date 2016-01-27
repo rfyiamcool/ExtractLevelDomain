@@ -115,14 +115,14 @@ class ExtractLevelDomain():
             return False
 
     def _reset(self):
-        set_level(self.level)    
+        set_level(self.level)
 
     def _parse_regex(self,level):
         extractRule = r'(\w*\.?)%s('+'|'.join([h.replace('.',r'\.') for h in self.topHostPostfix])+')$'
         level = level if level == "*" else "{%s}"%level
         extractRule = extractRule%(level)
         return extractRule
-        
+
 if __name__ == "__main__":
     filter = ExtractLevelDomain()
     print filter.level
