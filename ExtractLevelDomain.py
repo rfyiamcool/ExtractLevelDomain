@@ -31,6 +31,7 @@ class ExtractLevelDomain():
             '.date',
             '.site',
             '.red',
+            'studio',
             '.link',
             '.online',
             '.help',
