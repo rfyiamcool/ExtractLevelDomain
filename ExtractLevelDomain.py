@@ -43,6 +43,7 @@ class ExtractLevelDomain():
             '.com.co',
             '.net.co',
             '.nom.co',
+            'lawyer',
             '.de',
             '.es',
             '.com.es',
