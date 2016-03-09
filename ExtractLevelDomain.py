@@ -40,6 +40,7 @@ class ExtractLevelDomain():
             '.com.bz',
             '.net.bz',
             '.cc',
+            '.market',
             '.com.co',
             '.net.co',
             '.nom.co',
