@@ -31,7 +31,7 @@ class ExtractLevelDomain():
             '.date',
             '.site',
             '.red',
-            'studio',
+            '.studio',
             '.link',
             '.online',
             '.help',
@@ -40,11 +40,12 @@ class ExtractLevelDomain():
             '.com.bz',
             '.net.bz',
             '.cc',
+            '.band',
             '.market',
             '.com.co',
             '.net.co',
             '.nom.co',
-            'lawyer',
+            '.lawyer',
             '.de',
             '.es',
             '.com.es',
@@ -83,7 +84,7 @@ class ExtractLevelDomain():
             '.me.uk',
             '.org.uk',
             '.vg']
-        
+
         self.extractPattern = r'[\.]('+'|'.join([h.replace('.',r'\.') for h in self.topHostPostfix])+')$'
         self.pattern = re.compile(self.extractPattern,re.IGNORECASE)
         self.level = "*"
@@ -102,7 +103,7 @@ class ExtractLevelDomain():
         m = pattern.search(host)
         self.level = level
         return m.group() if m else host
-    
+
     def set_level(self,level):
         extractRule = self._parse_regex(level)
         self.extractPattern = extractRule
